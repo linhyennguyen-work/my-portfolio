@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let label = 'Get in Touch';
+  export let label = '';
 </script>
 <button class='relative overflow-hidden inline-flex items-center gap-4 bg-primary text-surface font-medium px-6 py-4 rounded-4xl group'>
   <span class="w-2 h-2 bg-surface rounded-full"></span>
