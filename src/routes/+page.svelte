@@ -1,10 +1,8 @@
 <script lang="ts">
   import Header from '../components/layout/Header.svelte';
-
+  
 
 </script>
-<div class="grid grid-rows-[86px_1fr_auto] min-h-screen  ">
-    <Header></Header>
     <main class="w-full max-w-[1440px] pt-25 pb-10 px-20 mx-auto ">
       
         <div class="font-bold text-primary">
@@ -44,4 +42,3 @@
         
     </main>
 
-</div>
