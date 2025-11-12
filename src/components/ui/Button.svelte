@@ -5,10 +5,10 @@
 
 <button
 	onclick={onClick}
-	class="group relative inline-flex items-center gap-4 overflow-hidden rounded-4xl bg-primary px-6 py-4 font-medium text-surface"
+	class="group relative inline-flex items-center gap-4 overflow-hidden rounded-4xl bg-primary px-8 py-6 font-medium text-surface lg:px-4 lg:py-3 xl:px-6 xl:py-4"
 >
 	<span class="h-2 w-2 rounded-full bg-surface"></span>
-	<span class="relative h-6 overflow-hidden">
+	<span class="relative h-10 overflow-hidden lg:h-6">
 		<span class="block transition-transform duration-300 ease-in-out group-hover:-translate-y-full"
 			>{label}</span
 		>

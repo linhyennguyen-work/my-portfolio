@@ -1,7 +1,14 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
-    export let icon:string=""
+	import Icon from '@iconify/svelte';
+	export let icon: string = '';
+	export let onClick: () => void = () => {
+		console.log('IconButton clicked');
+	};
 </script>
-<button class="px-4 py-4 cursor-pointer">
-    <Icon icon={icon}  class="text-lg text-primary"  />
+
+<button
+	onclick={onClick}
+	class="t cursor-pointer px-4 py-4 text-xl text-primary hover:text-secondary"
+>
+	<Icon {icon} class={['text-primary', 'hover:text-secondary', $$props.class].join(' ')} />
 </button>
