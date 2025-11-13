@@ -7,14 +7,31 @@
 </script>
 
 <div class=" ">
-	<Heading class="text-[240px]" text="Contact"></Heading>
-	<div class="mt-20 flex justify-between">
+	<Heading
+		class="text-7xl leading-[1] 
+				lg:text-[120px] lg:leading-[0.9]
+				xl:text-[180px] xl:leading-[0.8] 
+				2xl:text-[240px] 2xl:leading-[0.8]"
+		text="Contact"
+	></Heading>
+	<div
+		class="mt-5 ml-5 flex flex-col-reverse justify-between gap-10 lg:mt-10 lg:flex-row lg:gap-0 xl:mt-20"
+	>
 		<div>
-			<p class="text-4xl font-medium text-secondary">Got an idea, a goal, or a challenge?</p>
-			<Link text="Let's connect!" actionContent="Get my resume"></Link>
+			<p
+				class="text-lg font-medium text-secondary
+						lg:text-2xl xl:text-3xl 2xl:text-4xl"
+			>
+				Got an idea, a goal, or a challenge?
+			</p>
+			<Link
+				class="text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl"
+				text="Let's connect!"
+				actionContent="Get my resume"
+			></Link>
 		</div>
-		<div class="mt-2 flex flex-col gap-10">
-			<div class="flex gap-20">
+		<div class="mt-2 flex flex-col gap-2 lg:gap-8 xl:gap-10">
+			<div class="flex flex-col gap-2 lg:flex-row lg:gap-20">
 				<InfoItem title="Phone / Zalo" content="0903750719" isReverse={true}></InfoItem>
 				<InfoItem title="Location" content="Ho Chi Minh City" isReverse={true}></InfoItem>
 			</div>

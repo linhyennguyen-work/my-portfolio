@@ -57,7 +57,7 @@
 		<!-- Mobile menu overlay -->
 		{#if isMobileMenuOpen}
 			<div
-				class="animate-fadeIn fixed inset-0 z-50 flex flex-col items-center justify-center gap-10 bg-background/95 text-3xl font-semibold text-primary backdrop-blur-sm"
+				class="animate-fadeIn fixed inset-0 z-50 flex flex-col items-center justify-center gap-3 bg-background/95 text-lg font-semibold text-primary backdrop-blur-sm"
 			>
 				<div class="absolute top-6 right-6">
 					<IconButton icon="mingcute:close-line" class="text-4xl" onClick={closeMenu}></IconButton>
@@ -66,11 +66,12 @@
 				<NavItem onClick={closeMenu} label="About" href="/about" />
 				<NavItem onClick={closeMenu} label="Projects" href="/projects" />
 
-				<IconButton icon="mingcute:sun-line" class="text-4xl"></IconButton>
-				<IconButton icon="mingcute:palette-line" class="text-4xl"></IconButton>
-				<IconButton icon="circle-flags:lang-vi" class="text-4xl"></IconButton>
+				<IconButton icon="mingcute:sun-line" class="text-2xl"></IconButton>
+				<IconButton icon="mingcute:palette-line" class="text-2xl"></IconButton>
+				<IconButton icon="circle-flags:lang-vi" class="text-2xl"></IconButton>
 
 				<Button
+					class="mt-6"
 					onClick={() => {
 						goContact();
 						closeMenu();

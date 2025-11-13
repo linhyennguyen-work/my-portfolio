@@ -4,7 +4,7 @@
 	export let actionContent: string = '';
 </script>
 
-<p class="mt-3 text-4xl font-medium text-primary {$$props.class}">
+<p class="mt-3 font-medium text-primary {$$props.class}">
 	{text}
 	<a href="./" class="group font-bold">
 		{actionContent}
