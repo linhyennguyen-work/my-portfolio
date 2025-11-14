@@ -1,6 +1,5 @@
 <script lang="ts">
 	import InfoItem from '../components/ui/InfoItem.svelte';
-	import Heading from '../components/ui/Heading.svelte';
 	import Link from '../components/ui/Link.svelte';
 </script>
 
@@ -17,14 +16,16 @@
 		>
 			Hi,
 		</p>
-		<Heading
-			text="I'm Linh Yen Nguyen."
-			class="mt-5 text-3xl
+		<h1
+			class="mt-5
+					text-3xl font-bold text-primary
 					md:mt-12 md:text-6xl
-					lg:mt-8 lg:text-7xl 
-					xl:mt-10 xl:text-8xl 
+					lg:mt-8 lg:text-7xl
+					xl:mt-10 xl:text-8xl
 					2xl:mt-15 2xl:text-9xl"
-		></Heading>
+		>
+			I'm Linh Yen Nguyen.
+		</h1>
 		<p
 			class="mt-5 text-2xl font-bold text-primary
 					md:mt-12 md:ml-0.5 md:text-5xl

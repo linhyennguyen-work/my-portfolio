@@ -7,7 +7,7 @@
 <a
 	onclick={onClick}
 	{href}
-	class="tracking-tights group inline-flex content-center items-center gap-2 rounded-full px-4 py-4 font-medium text-primary transition select-none hover:text-secondary xl:text-lg {$$props.class}"
+	class="tracking-tights group inline-flex content-center items-center gap-2 rounded-full px-4 py-4 font-medium text-primary transition select-none hover:text-secondary xl:text-lg 2xl:text-xl {$$props.class}"
 >
 	<span class=" inline-block transform transition-transform duration-200 group-hover:translate-x-2"
 		>[</span

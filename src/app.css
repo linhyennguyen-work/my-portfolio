@@ -1,52 +1,43 @@
 @import 'tailwindcss';
 
-
-
 @theme {
-
-
-  --color-background: oklch(0.961 0.001 95);
-  --color-primary: oklch(0.15 0.01 260);
-  --color-secondary: oklch(0.58 0.02 260);
-  --color-surface: oklch(0.99 0 95);
-
+	--color-background: oklch(0.961 0.001 95);
+	--color-primary: oklch(0.15 0.01 260);
+	--color-secondary: oklch(0.58 0.02 260);
+	--color-surface: oklch(0.99 0 95);
 }
-*{
-  box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 :root {
-  /* font-family: "Roboto Slabv", sans-serif; */
+	/* font-family: 'Roboto', sans-serif; */
 }
 
-
-:root[data-theme="light-black"] {
-  --color-background: oklch(0.961 0.001 95);
-  --color-primary: oklch(0.15 0.01 260);
-  --color-secondary: oklch(0.58 0.02 260);
-  --color-surface: oklch(0.99 0 95);
-
+:root[data-theme='light-black'] {
+	--color-background: oklch(0.961 0.001 95);
+	--color-primary: oklch(0.15 0.01 260);
+	--color-secondary: oklch(0.58 0.02 260);
+	--color-surface: oklch(0.99 0 95);
 }
 
-:root[data-theme="dark-black"] {
-  --color-background: oklch(0.13 0.01 265); 
-  --color-surface: oklch(0.18 0.01 265);    
-  --color-primary: oklch(0.95 0.01 95);     
-  --color-secondary: oklch(0.75 0.02 95);   
-
+:root[data-theme='dark-black'] {
+	--color-background: oklch(0.13 0.01 265);
+	--color-surface: oklch(0.18 0.01 265);
+	--color-primary: oklch(0.95 0.01 95);
+	--color-secondary: oklch(0.75 0.02 95);
 }
 
-:root[data-theme="light-blue"] {
-  --color-background: oklch(0.98 0.02 250);
-  --color-primary: oklch(0.39 0.18 272);
-  --color-secondary: oklch(0.58 0.23 271);
-  --color-surface: oklch(0.99 0.01 250);
+:root[data-theme='light-blue'] {
+	--color-background: oklch(0.98 0.02 250);
+	--color-primary: oklch(0.39 0.18 272);
+	--color-secondary: oklch(0.58 0.23 271);
+	--color-surface: oklch(0.99 0.01 250);
 }
 
-:root[data-theme="dark-blue"] {
-  --color-background: oklch(0.18 0.03 265); 
-  --color-primary: oklch(0.72 0.17 272); 
-  --color-secondary: oklch(0.65 0.15 272);
-  --color-surface: oklch(0.25 0.04 265);
+:root[data-theme='dark-blue'] {
+	--color-background: oklch(0.18 0.03 265);
+	--color-primary: oklch(0.72 0.17 272);
+	--color-secondary: oklch(0.65 0.15 272);
+	--color-surface: oklch(0.25 0.04 265);
 }
-

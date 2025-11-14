@@ -44,16 +44,17 @@
 				<li><NavItem label="Projects" href="/projects" /></li>
 			</ul>
 			<div class="m-0 flex list-none gap-2 p-0">
-				<IconButton icon="mingcute:sun-line"></IconButton>
-				<IconButton icon="mingcute:palette-line"></IconButton>
+				<IconButton icon="ic:baseline-contrast"></IconButton>
+				<IconButton icon="ic:outline-palette"></IconButton>
 				<IconButton icon="circle-flags:lang-vi"></IconButton>
 			</div>
 			<Button onClick={goContact} label="Get in Touch"></Button>
 		</div>
+
+		<!-- Mobile menu -->
 		<div class="lg:hidden">
 			<IconButton class="text-3xl" icon="mingcute:menu-line" onClick={openMenu}></IconButton>
 		</div>
-		<!-- Mobile menu -->
 		<!-- Mobile menu overlay -->
 		{#if isMobileMenuOpen}
 			<div

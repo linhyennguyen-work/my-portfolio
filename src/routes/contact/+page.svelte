@@ -1,19 +1,11 @@
 <script lang="ts">
 	import Link from '../../components/ui/Link.svelte';
-
-	import Icon from '@iconify/svelte';
 	import Heading from '../../components/ui/Heading.svelte';
 	import InfoItem from '../../components/ui/InfoItem.svelte';
 </script>
 
-<div class=" ">
-	<Heading
-		class="text-7xl leading-[1] 
-				lg:text-[120px] lg:leading-[0.9]
-				xl:text-[180px] xl:leading-[0.8] 
-				2xl:text-[240px] 2xl:leading-[0.8]"
-		text="Contact"
-	></Heading>
+<div>
+	<Heading text="Contact"></Heading>
 	<div
 		class="mt-5 ml-5 flex flex-col-reverse justify-between gap-10 lg:mt-10 lg:flex-row lg:gap-0 xl:mt-20"
 	>
@@ -32,7 +24,7 @@
 		</div>
 		<div class="mt-2 flex flex-col gap-2 lg:gap-8 xl:gap-10">
 			<div class="flex flex-col gap-2 lg:flex-row lg:gap-20">
-				<InfoItem title="Phone / Zalo" content="0903750719" isReverse={true}></InfoItem>
+				<InfoItem title="Phone / Zalo" content="0903 750 719" isReverse={true}></InfoItem>
 				<InfoItem title="Location" content="Ho Chi Minh City" isReverse={true}></InfoItem>
 			</div>
 			<InfoItem title="Github" content="github.com/linhyennguyen-work" isReverse={true}></InfoItem>
