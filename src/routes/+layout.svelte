@@ -8,7 +8,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="grid min-h-screen grid-rows-[min-content_auto]">
+<div class="grid min-h-screen grid-rows-[min-content_auto] bg-background">
 	<Header></Header>
 	<main
 		class="mx-auto w-full max-w-[1600px]
