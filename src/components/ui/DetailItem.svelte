@@ -18,10 +18,10 @@
 	$: capitalizedTitle = capitalizeWords(title);
 </script>
 
-<div class={`mt-5 flex ${isArray ? 'flex-col' : 'flex'}`}>
+<div class={`mt-5 flex text-sm md:text-base 2xl:text-lg ${isArray ? 'flex-col' : 'flex'}`}>
 	<!-- Title -->
 	<div class="font-medium text-primary">
-		<span>[{capitalizedTitle}] :</span>
+		<span>{capitalizedTitle} :</span>
 	</div>
 
 	<!-- Content -->

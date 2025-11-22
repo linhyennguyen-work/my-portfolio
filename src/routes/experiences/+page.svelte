@@ -1,7 +1,34 @@
 <script lang="ts">
+	import Bubbles from '../../components/layout/SkillsItems.svelte';
 	import Heading from '../../components/ui/Heading.svelte';
 	import ProjectCard from '../../components/ui/ProjectCard.svelte';
 	import SpecialButton from '../../components/ui/SpecialButton.svelte';
+	const timeline = [
+		{
+			company: 'Netpower Vietnam',
+			role: 'Front-end Developer',
+			time: '12/2022 – 04/2024',
+			responsibilities: [
+				'Developed web and mobile application interfaces using Svelte and Flutter.',
+				'Optimized UI/UX and rendering performance, ensuring consistent and responsive interfaces.',
+				'Collaborated closely with the backend team to integrate APIs and handle data flows.'
+			]
+		},
+		{
+			company: 'Netpower Vietnam',
+			role: 'Intern',
+			time: '09/2022 – 12/2022',
+			responsibilities: [
+				'Studied and practiced ReactJS, NextJS, VueJS, and NestJS through internal tasks.'
+			]
+		},
+		{
+			company: 'Ton Duc Thang	 University ',
+			role: 'Bachelor of Information Technology',
+			time: '09/2017 – 04/2022',
+			responsibilities: ['Major: Software Engineering.', ' GPA: 7.3/10']
+		}
+	];
 	const projects = [
 		{
 			name: 'Dokall',
@@ -51,14 +78,41 @@
 			responsibilities: ['Designed and developed the user interface.']
 		}
 	];
+	const skills = {
+		backend: ['NodeJS', 'NestJS', 'PostgreSQL', 'MySQL'],
+		frontend: ['Svelte', 'React', 'Flutter', 'HTML', 'CSS', 'TailwindCSS'],
+		versionSourceControl: ['Git', 'GitHub', 'Bitbucket'],
+		tools: ['Figma', 'Sketch', 'Jira'],
+		programmingLanguages: ['JavaScript', 'TypeScript', 'Dart'],
+		soft: ['Teamwork', 'Adaptability', 'Problem-solving', 'Creativity'],
+		languages: ['Vietnamese', 'English - TOEIC']
+	};
 </script>
 
-<div>
-	<Heading text="Projects"></Heading>
-	<div class="mt-12 ml-5 lg:mt-18 xl:mt-30">
-		{#each projects as item}
-			<ProjectCard {item}></ProjectCard>
-		{/each}
-	</div>
+<Heading text="Experiences"></Heading>
+<div class="mt-8 lg:mx-5 lg:mt-15 xl:mt-20 2xl:mt-25">
+	{#each timeline as item, i}
+		<div class={i > 0 ? 'mt-6 xl:mt-8 2xl:mt-10 ' : ''}>
+			<p class="text-lg font-medium text-primary lg:text-xl xl:text-2xl 2xl:text-3xl">
+				{item.company} — {item.role}
+			</p>
+			<p class="mt-1 font-medium text-secondary italic md:mt-3 2xl:text-xl">{item.time}</p>
+			<ul class="list-disc pl-10 md:mt-3 2xl:text-xl">
+				{#each item.responsibilities as task}
+					<li class="mt-2">{task}</li>
+				{/each}
+			</ul>
+		</div>
+	{/each}
+</div>
+<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
+	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">[ Skills ]</h3>
+	<Bubbles {skills} />
+</div>
+<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
+	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">[ Projects ]</h3>
+	{#each projects as item}
+		<ProjectCard {item}></ProjectCard>
+	{/each}
 	<SpecialButton></SpecialButton>
 </div>

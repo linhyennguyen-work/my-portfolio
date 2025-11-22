@@ -8,7 +8,7 @@
 
 <button
 	onclick={onClick}
-	class="t cursor-pointer px-4 py-4 text-xl text-primary hover:text-secondary"
+	class="t cursor-pointer px-4 py-4 text-xl text-primary hover:text-secondary {$$props.classButton}"
 >
-	<Icon {icon} class={['text-primary', 'hover:text-secondary', $$props.class].join(' ')} />
+	<Icon {icon} class={['text-primary', 'hover:text-secondary', $$props.classIcon].join(' ')} />
 </button>

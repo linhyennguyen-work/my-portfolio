@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import Icon from '@iconify/svelte';
 	import Button from '../ui/Button.svelte';
 	import IconButton from '../ui/IconButton.svelte';
 	import NavItem from '../ui/NavItem.svelte';
@@ -24,9 +23,10 @@
 <header class=" w-full border-b border-secondary lg:border-none">
 	<nav
 		class="mx-auto flex max-w-[1600px] items-center justify-between
-				px-6 py-4
-              	md:px-10 md:py-6
-				xl:px-10 xl:py-8"
+				px-6 py-3
+              	md:px-10 md:py-4
+				xl:px-10 xl:py-8
+				2xl:px-10 2xl:py-10"
 		aria-label="Main navigation"
 	>
 		<a
@@ -39,9 +39,8 @@
 		<!-- Desktop menu -->
 		<div class="hidden items-center justify-between gap-4 lg:flex">
 			<ul class="m-0 flex list-none gap-6 p-0">
-				<li><NavItem label="Home" href="./" /></li>
-				<li><NavItem label="About" href="/about" /></li>
-				<li><NavItem label="Projects" href="/projects" /></li>
+				<li><NavItem label="About" href="./" /></li>
+				<li><NavItem label="Experiences" href="/experiences" /></li>
 			</ul>
 			<div class="m-0 flex list-none gap-2 p-0">
 				<IconButton icon="ic:baseline-contrast"></IconButton>
@@ -53,7 +52,12 @@
 
 		<!-- Mobile menu -->
 		<div class="lg:hidden">
-			<IconButton class="text-3xl" icon="mingcute:menu-line" onClick={openMenu}></IconButton>
+			<IconButton
+				classButton="!px-2 !py-2 "
+				classIcon="text-2xl"
+				icon="mingcute:menu-line"
+				onClick={openMenu}
+			></IconButton>
 		</div>
 		<!-- Mobile menu overlay -->
 		{#if isMobileMenuOpen}
@@ -61,15 +65,15 @@
 				class="animate-fadeIn fixed inset-0 z-50 flex flex-col items-center justify-center gap-3 bg-background/95 text-lg font-semibold text-primary backdrop-blur-sm"
 			>
 				<div class="absolute top-6 right-6">
-					<IconButton icon="mingcute:close-line" class="text-4xl" onClick={closeMenu}></IconButton>
+					<IconButton icon="mingcute:close-line" classIcon="text-2xl" onClick={closeMenu}
+					></IconButton>
 				</div>
-				<NavItem onClick={closeMenu} label="Home" href="./" />
-				<NavItem onClick={closeMenu} label="About" href="/about" />
-				<NavItem onClick={closeMenu} label="Projects" href="/projects" />
+				<NavItem onClick={closeMenu} label="About" href="./" />
+				<NavItem onClick={closeMenu} label="Experiences" href="/experiences" />
 
-				<IconButton icon="mingcute:sun-line" class="text-2xl"></IconButton>
-				<IconButton icon="mingcute:palette-line" class="text-2xl"></IconButton>
-				<IconButton icon="circle-flags:lang-vi" class="text-2xl"></IconButton>
+				<IconButton icon="mingcute:sun-line" classIcon="text-2xl"></IconButton>
+				<IconButton icon="mingcute:palette-line" classIcon="text-2xl"></IconButton>
+				<IconButton icon="circle-flags:lang-vi" classIcon="text-2xl"></IconButton>
 
 				<Button
 					class="mt-6"

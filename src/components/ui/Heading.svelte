@@ -2,11 +2,11 @@
 	export let text = '';
 </script>
 
-<h1
-	class=" text-7xl leading-none font-bold text-primary
-				lg:text-[120px] lg:leading-none
-				xl:text-[180px] xl:leading-none
-				2xl:text-[200px] 2xl:leading-none{$$props.class}"
+<h2
+	class=" text-5xl leading-none font-bold text-primary
+				lg:text-[120px]
+				xl:text-[180px]
+				2xl:text-[200px] {$$props.class}"
 >
 	{text}
-</h1>
+</h2>

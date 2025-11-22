@@ -1,48 +1,32 @@
 <script lang="ts">
+	import Heading from '../components/ui/Heading.svelte';
 	import InfoItem from '../components/ui/InfoItem.svelte';
 	import Link from '../components/ui/Link.svelte';
 </script>
 
-<div>
-	<div>
-		<p
-			class=" text-4xl
-					font-bold
-					text-primary
-					md:text-6xl
-					lg:text-7xl
-					xl:text-8xl
-					2xl:text-9xl"
-		>
-			Hi,
-		</p>
-		<h1
-			class="mt-5
+<Heading text="Hi,"></Heading>
+<div class="mt-12 lg:mx-2 lg:mt-15 xl:mt-15 2xl:mt-20">
+	<p
+		class="
 					text-3xl font-bold text-primary
-					md:mt-12 md:text-6xl
-					lg:mt-8 lg:text-7xl
-					xl:mt-10 xl:text-8xl
-					2xl:mt-15 2xl:text-9xl"
-		>
-			I'm Linh Yen Nguyen.
-		</h1>
-		<p
-			class="mt-5 text-2xl font-bold text-primary
-					md:mt-12 md:ml-0.5 md:text-5xl
-					lg:mt-8 lg:ml-1 lg:text-5xl
-					xl:mt-10 xl:ml-1 xl:text-6xl
-					2xl:mt-15 2xl:ml-1 2xl:text-7xl"
-		>
-			I'm front-end developer.
-		</p>
-	</div>
-
+					 md:text-5xl
+					 lg:text-6xl
+					 xl:text-7xl
+					 2xl:text-8xl"
+	>
+		I'm Linh Yen Nguyen.
+	</p>
+	<p
+		class="mt-5 text-2xl font-bold text-primary
+					md:mt-12 md:ml-0.5 md:text-3xl
+					lg:mt-8 lg:ml-1 lg:text-4xl
+					xl:mt-10 xl:ml-1 xl:text-5xl
+					2xl:mt-15 2xl:ml-1 2xl:text-6xl"
+	>
+		I'm front-end developer.
+	</p>
 	<div
-		class="mt-8 flex flex-col gap-10 md:mt-12
-				md:ml-0.5 md:gap-20
-				lg:mt-8 lg:ml-1 lg:flex-row
-				xl:mt-10 xl:ml-1
-				2xl:mt-15 2xl:ml-1.5"
+		class="mx-2 mt-8 flex flex-col gap-10 md:mt-12 md:gap-20 lg:mt-8 lg:flex-row xl:mt-10 2xl:mt-15"
 	>
 		<InfoItem title="2" content="Real-world Projects"></InfoItem>
 		<InfoItem title="1+" content="Years of Experience"></InfoItem>
@@ -50,36 +34,13 @@
 	</div>
 
 	<hr
-		class="mt-6 w-3/4 rounded-xs border-t-4 border-primary md:mt-12
-				md:ml-1 md:border-t-6 lg:mt-6
-				lg:ml-1 lg:w-1/2
-				xl:mt-8 xl:ml-1
-				2xl:mt-10 2xl:ml-1.5"
+		class="mx-2 my-6 w-3/4 rounded-xs border-t-4 border-primary md:my-12 md:border-t-6 lg:my-6 lg:w-1/2 xl:my-8 2xl:my-8"
 	/>
 
-	<div
-		class="mt-6
-				md:mt-12 md:ml-1
-				lg:mt-6 lg:ml-1
-				xl:mt-8 xl:ml-1
-				2xl:mt-10 2xl:ml-1.5"
-	>
-		<span
-			class="text-lg font-medium text-secondary
-					md:text-2xl
-					lg:text-xl
-					xl:text-xl
-					2xl:text-xl">Want to see my journey and skills?</span
-		>
-		<Link
-			class="mt-6 text-lg 
-					md:text-2xl
-					lg:inline lg:text-xl
-					xl:ml-2
-					xl:text-xl
-					2xl:text-xl"
-			text="Get to know me!"
-			actionContent="Go to About"
-		></Link>
-	</div>
+	<Link
+		class=" mx-2 text-lg  text-secondary md:text-2xl lg:inline lg:text-xl xl:text-xl 2xl:text-xl "
+		text="Want to see my journey and skills?"
+		actionContent="Go to Experiences"
+		href="/experiences"
+	></Link>
 </div>
