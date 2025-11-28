@@ -5,9 +5,9 @@
 	export let href: string = './';
 </script>
 
-<div class="mt-3 font-medium text-primary {$$props.class}">
+<div class=" font-medium text-primary {$$props.class}">
 	{text}
-	<a {href} class="group font-bold text-primary">
+	<a {href} class="group mt-2 block font-bold text-primary lg:mt-0 lg:inline">
 		{actionContent}
 		<Icon
 			class="inline transition-transform duration-300 group-hover:translate-x-2"

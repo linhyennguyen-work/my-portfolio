@@ -5,13 +5,13 @@
 </script>
 
 {#if !isReverse}
-	<div class="flex items-center justify-between lg:block">
+	<div class="flex flex-col items-start justify-start lg:block">
 		<p
 			class="inline text-3xl
 					font-bold text-primary md:text-5xl
 					lg:block
-					lg:text-4xl
-					xl:text-5xl
+					lg:text-3xl
+					xl:text-4xl
 					2xl:text-5xl"
 		>
 			{title}
@@ -19,8 +19,8 @@
 		<p
 			class="mt-2 inline text-lg font-medium text-secondary md:text-2xl
 					lg:block
-					lg:text-xl
-					xl:text-xl
+					lg:text-lg
+					xl:text-lg
 					2xl:text-xl"
 		>
 			{content}
