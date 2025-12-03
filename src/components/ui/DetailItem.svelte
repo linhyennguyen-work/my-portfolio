@@ -26,12 +26,12 @@
 
 	<!-- Content -->
 	{#if isArray}
-		<ul class="mt-2 ml-5 list-disc pl-10">
+		<ul class="mt-2 ml-5 list-disc pl-10 text-primary">
 			{#each content as item}
 				<li class="mb-1">{item}</li>
 			{/each}
 		</ul>
 	{:else}
-		<span class="ml-2 italic">{content}</span>
+		<span class="ml-2 text-primary italic">{content}</span>
 	{/if}
 </div>

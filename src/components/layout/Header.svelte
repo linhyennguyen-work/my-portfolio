@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 	import Button from '../ui/Button.svelte';
 	import IconButton from '../ui/IconButton.svelte';
 	import NavItem from '../ui/NavItem.svelte';
@@ -17,6 +18,58 @@
 
 	function openMenu() {
 		isMobileMenuOpen = true;
+	}
+
+	type TMode = 'light' | 'dark';
+	type TColor = 'black' | 'blue' | 'rose';
+
+	let mode: TMode = 'light';
+	let color: TColor = 'black';
+
+	// Helper: validate màu hợp lệ
+	function isColor(v: string): v is TColor {
+		return v === 'black' || v === 'blue' || v === 'rose';
+	}
+
+	function isMode(v: string): v is TMode {
+		return v === 'light' || v === 'dark';
+	}
+
+	onMount(() => {
+		const savedTheme = localStorage.getItem('theme');
+
+		if (savedTheme) {
+			const [savedMode, savedColor] = savedTheme.split('-');
+
+			if (isMode(savedMode)) mode = savedMode;
+			if (isColor(savedColor)) color = savedColor;
+
+			applyTheme();
+		} else {
+			applyTheme();
+		}
+	});
+
+	function applyTheme() {
+		const theme = `${mode}-${color}`;
+		console.log('theme:', theme);
+		document.documentElement.dataset.theme = theme;
+		localStorage.setItem('theme', theme);
+	}
+
+	function toggleMode() {
+		mode = mode === 'light' ? 'dark' : 'light';
+		applyTheme();
+	}
+
+	function toggleColor() {
+		const next: Record<TColor, TColor> = {
+			black: 'blue',
+			blue: 'rose',
+			rose: 'black'
+		};
+		color = next[color];
+		applyTheme();
 	}
 </script>
 
@@ -43,8 +96,8 @@
 				<li><NavItem label="Experiences" href="/experiences" /></li>
 			</ul>
 			<div class="m-0 flex list-none gap-2 p-0">
-				<IconButton icon="ic:baseline-contrast"></IconButton>
-				<IconButton icon="ic:outline-palette"></IconButton>
+				<IconButton onClick={toggleMode} icon="ic:baseline-contrast"></IconButton>
+				<IconButton onClick={toggleColor} icon="ic:outline-palette"></IconButton>
 				<IconButton icon="circle-flags:lang-vi"></IconButton>
 			</div>
 			<Button onClick={goContact} label="Get in Touch"></Button>

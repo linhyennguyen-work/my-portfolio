@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Bubbles from '../../components/layout/SkillsItems.svelte';
+	import SkillsItems from '../../components/layout/SkillsItems.svelte';
 	import Heading from '../../components/ui/Heading.svelte';
 	import ProjectCard from '../../components/ui/ProjectCard.svelte';
 	import SpecialButton from '../../components/ui/SpecialButton.svelte';
@@ -97,7 +97,7 @@
 				{item.company} — {item.role}
 			</p>
 			<p class="mt-1 font-medium text-secondary italic md:mt-3 2xl:text-xl">{item.time}</p>
-			<ul class="list-disc pl-10 md:mt-3 2xl:text-xl">
+			<ul class="list-disc pl-10 text-primary md:mt-3 2xl:text-xl">
 				{#each item.responsibilities as task}
 					<li class="mt-2">{task}</li>
 				{/each}
@@ -107,7 +107,7 @@
 </div>
 <div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
 	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">[ Skills ]</h3>
-	<Bubbles {skills} />
+	<SkillsItems {skills} />
 </div>
 <div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
 	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">[ Projects ]</h3>
