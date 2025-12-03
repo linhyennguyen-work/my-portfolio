@@ -124,8 +124,9 @@
 				<NavItem onClick={closeMenu} label="About" href="./" />
 				<NavItem onClick={closeMenu} label="Experiences" href="/experiences" />
 
-				<IconButton icon="mingcute:sun-line" classIcon="text-2xl"></IconButton>
-				<IconButton icon="mingcute:palette-line" classIcon="text-2xl"></IconButton>
+				<IconButton onClick={toggleMode} icon="mingcute:sun-line" classIcon="text-2xl"></IconButton>
+				<IconButton onClick={toggleColor} icon="mingcute:palette-line" classIcon="text-2xl"
+				></IconButton>
 				<IconButton icon="circle-flags:lang-vi" classIcon="text-2xl"></IconButton>
 
 				<Button

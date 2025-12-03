@@ -70,7 +70,7 @@
 			name: 'Storii',
 			description:
 				'A personal web for a singer, featuring music playback, concert information, album showcase, and interview articles',
-			link: 'https://linhyennguyen1802.github.io/storii/',
+			link: 'https://linhyennguyen-work.github.io/storii/',
 			tech: 'HTML, CSS, Javascript, Jquery',
 			time: ' 12/2020- 01/2021',
 			company: 'Personal Project',
