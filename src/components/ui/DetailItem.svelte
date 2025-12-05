@@ -1,7 +1,9 @@
 <script lang="ts">
-	export let title: string = '';
+	export let title: any = '';
 	export let content: string | string[];
+
 	$: isArray = Array.isArray(content);
+
 	function isUrl(str: string) {
 		try {
 			new URL(str);
@@ -10,18 +12,12 @@
 			return false;
 		}
 	}
-
-	function capitalizeWords(str: string) {
-		return str.replace(/\b\w/g, (char) => char.toUpperCase());
-	}
-
-	$: capitalizedTitle = capitalizeWords(title);
 </script>
 
 <div class={`mt-5 flex text-sm md:text-base 2xl:text-lg ${isArray ? 'flex-col' : 'flex'}`}>
 	<!-- Title -->
 	<div class="font-medium text-primary">
-		<span>{capitalizedTitle} :</span>
+		<span>{title} :</span>
 	</div>
 
 	<!-- Content -->

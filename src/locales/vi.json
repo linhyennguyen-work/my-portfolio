@@ -1,0 +1,107 @@
+{
+	"header": {
+		"about": "Giới thiệu",
+		"exp": "Kinh nghiệm"
+	},
+	"button": {
+		"get": "Liên hệ",
+		"more": "Xem thêm",
+		"less": "Ẩn bớt",
+		"ready": "Sẵn sàng chưa ?",
+		"get_special": "Hợp tác nào !"
+	},
+	"about": {
+		"greeting": "Xin chào,",
+		"name": "Mình là Linh Yen Nguyen.",
+		"role": "Một lập trình viên Front-end.",
+		"skill_prj": "Dự án thực tế",
+		"skill_exp": "Năm kinh nghiệm",
+		"skill_code": "Lập trình, tiến bộ, phát triển mỗi ngày",
+		"invite": "Hành trình và kỹ năng?",
+		"go_exp": "Xem thêm về Kinh nghiệm"
+	},
+	"contact": {
+		"heading": "Liên hệ",
+		"greeting": "Có ý tưởng hay thử thách mới?",
+		"connect": "Hãy kết nối nào!",
+		"get_resum": "Tải CV",
+		"title_phone": "Sđt / Zalo",
+		"title_location": "Thành phố",
+		"title_git": "Github",
+		"title_email": "Email",
+		"location": "Hồ Chí Minh"
+	},
+	"exp": {
+		"heading": "Kinh nghiệm",
+		"title_skills": "Kỹ năng",
+		"title_prj": "Dự án",
+		"product": "Dự án nội bộ",
+		"prj": "Dự án cá nhân",
+		"company": "Netpower Việt Nam",
+		"role_dev": "Lập trình viên Front-end",
+		"role_intern": "Thực tập sinh",
+		"role_tdt": "Ngành Công nghệ Thông tin",
+		"university": "Đại học Tôn Đức Thắng",
+		"res_np": {
+			"res_001": "Phát triển giao diện web/mobile app với Svelte, Flutter.",
+			"res_002": "Tối ưu UI/UX và hiệu suất render, đảm bảo giao diện nhất quán và responsive.",
+			"res_003": "Phối hợp với backend team để tích hợp API và xử lý luồng dữ liệu."
+		},
+		"res_np_intern": "Tìm hiểu ReactJS, NextJS, VueJS, NestJS.",
+		"res_tdt": {
+			"res_001": "Chuyên ngành: Kỹ thuật phần mềm",
+			"res_002": "GPA: 7.3/10"
+		},
+
+		"prj_title": {
+			"link": "Link",
+			"tech": "Công nghệ",
+			"time": "Thời gian",
+			"company": "Công ty",
+			"role": "Vai trò",
+			"responsibilities": "Nhiệm vụ"
+		},
+		"dokall": {
+			"description": "Nền tảng giao tiếp và cộng tác doanh nghiệp với hệ thống workspace, cung cấp nhắn tin, gọi thoại/video real-time, quản lý ghi chú và quản lý task.",
+			"res": {
+				"res_001": "Xây dựng toàn bộ giao diện hệ thống, bao gồm Landing Page, Main Page và Admin Dashboard",
+				"res_002": "Phát triển hệ thống theme đa màu sắc, hỗ trợ đầy đủ Light Mode và Dark Mode.",
+				"res_003": "Xây dựng và triển khai các tính năng Boards (quản lý task) và Notes (ghi chú, bài viết)",
+				"res_004": "Phát triển giao diện Admin Dashboard phục vụ quản lý người dùng và hệ thống.",
+				"res_005": "Tích hợp tính năng Draft Message giúp lưu tạm nội dung tin nhắn",
+				"res_006": "Đảm bảo giao diện hoạt động ổn định trên nhiều thiết bị và trình duyệt bằng kỹ thuật Responsive Design",
+				"res_007": "Kiểm thử giao diện, phát hiện và sửa lỗi, đồng thời tối ưu trải nghiệm người dùng."
+			}
+		},
+		"scanart": {
+			"description": "Ứng dụng mobile cho phép người dùng scan ảnh để tìm thông tin tác phẩm nghệ thuật, đồng thời hỗ trợ mua – bán và quản lý bộ sưu tập tác phẩm",
+			"res": {
+				"res_001": "Phát triển giao diện cho cả ứng dụng mobile (Flutter) và Admin Dashboard trên web, đảm bảo thống nhất trải nghiệm giữa hai nền tảng.",
+				"res_002": "Xây dựng các màn hình mobile dựa trên thiết kế có sẵn, kết nối API và xử lý dữ liệu để hiển thị thông tin tác phẩm, giao dịch và người dùng.",
+				"res_003": "Phát triển và triển khai Admin Dashboard dùng để quản lý tác phẩm, người dùng và hệ thống marketplace.",
+				"res_004": "Cập nhật và điều chỉnh giao diện theo yêu cầu của khách hàng, đảm bảo đáp ứng mục tiêu và trải nghiệm mong muốn.",
+				"res_005": "Kiểm thử giao diện trên cả mobile và web; phát hiện, báo cáo và sửa lỗi để đảm bảo chất lượng trước khi bàn giao."
+			}
+		},
+		"storii": {
+			"description": "Giao diện web cá nhân của ca sĩ, tích hợp nghe nhạc, giới thiệu concert và albumn, bài phỏng vấn.",
+			"res": {
+				"res_001": "Thiết kế và xây dựng giao diện."
+			}
+		}
+	},
+	"skills": {
+		"backend": "Back-end",
+		"frontend": "Front-end",
+		"versionSourceControl": "Quản lý mã nguồn",
+		"tools": "Công cụ",
+		"programmingLanguages": "Ngôn ngữ lập trình",
+		"soft": "Kỹ năng mềm"
+	},
+	"soft_skills": {
+		"communication": "Giao tiếp",
+		"teamwwork": "Làm việc nhóm",
+		"agile": "Quy trình Agile/Scrum",
+		"research": "Tự học & Nghiên cứu"
+	}
+}

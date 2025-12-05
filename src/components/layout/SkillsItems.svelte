@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { t } from 'svelte-i18n';
+
 	export let skills: {
 		backend: string[];
 		frontend: string[];
@@ -6,7 +8,6 @@
 		tools: string[];
 		programmingLanguages: string[];
 		soft: string[];
-		languages: string[];
 	};
 
 	const skillKeys = Object.keys(skills) as (keyof typeof skills)[];
@@ -17,10 +18,12 @@
 		'xl:col-span-1 xl:row-span-1 lg:col-span-1 lg:row-span-1',
 		'xl:col-span-1 xl:row-span-1 lg:col-span-1 lg:row-span-1',
 		'xl:col-span-1 xl:row-span-1 lg:col-span-1 lg:row-span-1',
-		'xl:col-span-1 xl:row-span-1 lg:col-span-1 lg:row-span-1',
-		'xl:col-span-1 xl:row-span-1 lg:col-span-1 lg:row-span-1'
+		'xl:col-span-2 xl:row-span-1 lg:col-span-1 lg:row-span-1'
 	];
 
+	$: translateKey = (key: string): string => {
+		return $t('skills.' + key);
+	};
 	const formatTitle = (str: string) =>
 		str
 			.replace(/([A-Z])/g, ' $1')
@@ -39,7 +42,7 @@
 		<div
 			class={`flex flex-col gap-2 overflow-auto rounded-3xl bg-surface p-5 shadow-lg md:rounded-4xl md:p-6 xl:p-10 2xl:p-12 ${sizes[i]}`}
 		>
-			<div class=" font-semibold text-primary lg:text-lg 2xl:text-xl">{formatTitle(key)}</div>
+			<div class=" font-semibold text-primary lg:text-lg 2xl:text-xl">{translateKey(key)}</div>
 			<div class="flex flex-wrap gap-4 py-2">
 				{#each skills[key] as skill}
 					<span

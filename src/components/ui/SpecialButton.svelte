@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { t } from 'svelte-i18n';
 
 	let hovered = false;
 	function goContact() {
@@ -20,7 +21,7 @@
 		class="hidden transition-transform duration-700 xl:block"
 		style="transform: translateX({hovered ? '-110%' : '0'});"
 	>
-		Ready to Start ?
+		{$t('button.ready')}
 	</div>
 
 	<div
@@ -28,6 +29,6 @@
 		style="transform: translateX({hovered ? '-100%' : '0'});"
 	>
 		<span class="h-4 w-4 translate-y-1 rounded-full bg-surface"></span>
-		<span>Get in Touch</span>
+		<span>{$t('button.get_special')}</span>
 	</div>
 </div>

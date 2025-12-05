@@ -4,6 +4,7 @@
 	import Button from '../ui/Button.svelte';
 	import IconButton from '../ui/IconButton.svelte';
 	import NavItem from '../ui/NavItem.svelte';
+	import { locale, t } from 'svelte-i18n';
 
 	let isMobileMenuOpen = false;
 
@@ -71,6 +72,14 @@
 		color = next[color];
 		applyTheme();
 	}
+
+	// hàm toggle ngôn ngữ
+	function toggleLanguage() {
+		locale.update((currentLocale) => {
+			const lang = currentLocale ?? 'en';
+			return lang === 'vi' ? 'en' : 'vi';
+		});
+	}
 </script>
 
 <header class=" w-full border-b border-secondary lg:border-none">
@@ -92,15 +101,18 @@
 		<!-- Desktop menu -->
 		<div class="hidden items-center justify-between gap-4 lg:flex">
 			<ul class="m-0 flex list-none gap-6 p-0">
-				<li><NavItem label="About" href="./" /></li>
-				<li><NavItem label="Experiences" href="/experiences" /></li>
+				<li><NavItem label={$t('header.about')} href="./" /></li>
+				<li><NavItem label={$t('header.exp')} href="/experiences" /></li>
 			</ul>
 			<div class="m-0 flex list-none gap-2 p-0">
 				<IconButton onClick={toggleMode} icon="ic:baseline-contrast"></IconButton>
 				<IconButton onClick={toggleColor} icon="ic:outline-palette"></IconButton>
-				<IconButton icon="circle-flags:lang-vi"></IconButton>
+				<IconButton
+					onClick={toggleLanguage}
+					icon={$locale === 'vi' ? 'circle-flags:lang-vi' : 'circle-flags:lang-en'}
+				></IconButton>
 			</div>
-			<Button onClick={goContact} label="Get in Touch"></Button>
+			<Button onClick={goContact} label={$t('button.get')}></Button>
 		</div>
 
 		<!-- Mobile menu -->
@@ -121,8 +133,8 @@
 					<IconButton icon="mingcute:close-line" classIcon="text-2xl" onClick={closeMenu}
 					></IconButton>
 				</div>
-				<NavItem onClick={closeMenu} label="About" href="./" />
-				<NavItem onClick={closeMenu} label="Experiences" href="/experiences" />
+				<NavItem onClick={closeMenu} label={$t('header.about')} href="./" />
+				<NavItem onClick={closeMenu} label={$t('header.exp')} href="/experiences" />
 
 				<IconButton onClick={toggleMode} icon="mingcute:sun-line" classIcon="text-2xl"></IconButton>
 				<IconButton onClick={toggleColor} icon="mingcute:palette-line" classIcon="text-2xl"
@@ -135,7 +147,7 @@
 						goContact();
 						closeMenu();
 					}}
-					label="Get in Touch"
+					label={$t('button.get')}
 				></Button>
 			</div>
 		{/if}

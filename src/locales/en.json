@@ -1,0 +1,106 @@
+{
+	"header": {
+		"about": "About",
+		"exp": "Experiences"
+	},
+	"button": {
+		"get": "Get in Touch",
+		"more": "More details",
+		"less": "Less details",
+		"ready": "Ready to Start",
+		"get_special": "Get in Touch"
+	},
+	"about": {
+		"greeting": "Hi,",
+		"name": "I'm Linh Yen Nguyen.",
+		"role": "I'm front-end developer.",
+		"skill_prj": "Real-world Projects",
+		"skill_exp": "Years of Experience",
+		"skill_code": "Coding, Growing, Evolving",
+		"invite": "Want to see my journey and skills?",
+		"go_exp": "Go to Experiences"
+	},
+	"contact": {
+		"heading": "Contact",
+		"greeting": "Got an idea, a goal, or a challenge?",
+		"connect": "Let's connect!",
+		"get_resum": "Get my resume ",
+		"title_phone": "Phone / Zalo",
+		"title_location": "Location",
+		"title_git": "Github",
+		"title_email": "Email",
+		"location": "Ho Chi Minh City"
+	},
+	"exp": {
+		"heading": "Experiences",
+		"title_skills": "Skills",
+		"title_prj": "Projects",
+		"product": "Internal Product",
+		"prj": "Internal Project",
+		"company": "Netpower Vietnam",
+		"role_dev": "Front-end Developer",
+		"role_intern": "Intern",
+		"role_tdt": "Bachelor of Information Technology",
+		"university": "Ton Duc Thang University",
+		"res_np": {
+			"res_001": "Developed web and mobile application interfaces using Svelte and Flutter.",
+			"res_002": "Optimized UI/UX and rendering performance, ensuring consistent and responsive interfaces.",
+			"res_003": "Collaborated closely with the backend team to integrate APIs and handle data flows."
+		},
+		"res_np_intern": "Studied and practiced ReactJS, NextJS, VueJS, and NestJS through internal tasks",
+		"res_tdt": {
+			"res_001": "Major: Software Engineering.",
+			"res_002": "GPA: 7.3/10"
+		},
+		"prj_title": {
+			"link": "Link",
+			"tech": "Tech stack",
+			"time": "Time",
+			"company": "Company",
+			"role": "Role",
+			"responsibilities": "Responsibilities"
+		},
+		"dokall": {
+			"description": "A communication and collaboration platform for businesses with workspace functionality, real-time messaging, voice/video calling, notes management, and task management.",
+			"res": {
+				"res_001": "Built core interfaces including Landing Page, Main Page and Admin Dashboard.",
+				"res_002": "Developed a multi-color theme system supporting both Light Mode and Dark Mode.",
+				"res_003": "Implemented Boards (task management) and Notes (content & note management) features.",
+				"res_004": "Built the Admin Dashboard UI for user and system management.",
+				"res_005": "Integrated the Draft Message feature for temporary text storage.",
+				"res_006": "Ensured cross-browser and cross-device compatibility using responsive design techniques.",
+				"res_007": "Tested UI, identified issues, fixed bugs, and optimized user experience."
+			}
+		},
+		"scanart": {
+			"description": "A mobile application that allows users to scan artworks to retrieve information and enables buying/selling artworks through an integrated marketplace.",
+			"res": {
+				"res_001": "Developed UI for both mobile application (Flutter) and web-based Admin Dashboard.",
+				"res_002": "Implemented mobile screens from design files, integrated APIs and processed artwork/user/transaction data.",
+				"res_003": "Built and enhanced the Admin Dashboard for managing artworks, users and marketplace operations.",
+				"res_004": "Updated and refined UI based on client requirements to meet product goals and user expectations.",
+				"res_005": "Conducted UI testing on both mobile and web; detected issues, reported and fixed bugs before release."
+			}
+		},
+		"storii": {
+			"description": "A personal web for a singer, featuring music playback, concert information, album showcase, and interview articles.",
+			"res": {
+				"res_001": "Designed and developed the user interface."
+			}
+		}
+	},
+	"skills": {
+		"backend": "Back-end",
+		"frontend": "Front-end",
+		"versionSourceControl": "Version Source Control",
+		"tools": "Tools",
+		"programmingLanguages": "Programming Languages",
+		"soft": "Soft Skills"
+	},
+	"soft_skills": {
+		"communication": "Communication",
+		"teamwwork": "Teamwwork",
+		"agile": "Agile/Scrum",
+		"research": "Self-learning & Research"
+	}
+}
