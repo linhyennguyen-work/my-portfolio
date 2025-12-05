@@ -1,17 +1,9 @@
 <script lang="ts">
 	export let title: any = '';
 	export let content: string | string[];
+	export let isLink: boolean = false;
 
 	$: isArray = Array.isArray(content);
-
-	function isUrl(str: string) {
-		try {
-			new URL(str);
-			return true;
-		} catch {
-			return false;
-		}
-	}
 </script>
 
 <div class={`mt-5 flex text-sm md:text-base 2xl:text-lg ${isArray ? 'flex-col' : 'flex'}`}>
@@ -27,6 +19,8 @@
 				<li class="mb-1">{item}</li>
 			{/each}
 		</ul>
+	{:else if isLink}
+		<a target="_blank" href={content as string} class="ml-2 text-primary italic">{content} </a>
 	{:else}
 		<span class="ml-2 text-primary italic">{content}</span>
 	{/if}

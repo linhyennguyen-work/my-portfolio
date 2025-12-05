@@ -28,6 +28,11 @@
 	$: translateKey = (key: string): string => {
 		return $t('exp.prj_title.' + key);
 	};
+
+	const urlRegex =
+		/^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]{2,256}\.[a-zA-Z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/;
+
+	const isLink = (value: any) => urlRegex.test(value);
 </script>
 
 <div
@@ -44,7 +49,7 @@
 	{#if isShowDetails}
 		<div class="mb-4 xl:mb-6 2xl:mb-8" transition:slide={{ duration: 700 }}>
 			{#each Object.entries(item).filter(([key]) => key !== 'name' && key !== 'description') as [key, value]}
-				<DetailItem title={translateKey(key)} content={value} />
+				<DetailItem isLink={isLink(value)} title={translateKey(key)} content={value} />
 			{/each}
 		</div>
 	{/if}

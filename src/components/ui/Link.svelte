@@ -3,15 +3,16 @@
 	export let text: string = '';
 	export let actionContent: string = '';
 	export let href: string = './';
+	export let icon: string = '';
 </script>
 
-<div class=" font-medium text-primary {$$props.class}">
+<div class=" mt-2 font-medium text-primary {$$props.class} ">
 	{text}
-	<a {href} class="group mt-2 block font-bold text-primary lg:mt-0 lg:inline">
+	<a {href} class="group mt-2 block font-bold text-primary lg:mt-0 lg:inline-flex lg:items-end">
 		{actionContent}
 		<Icon
-			class="inline transition-transform duration-300 group-hover:translate-x-2"
-			icon="mingcute:arrow-right-fill"
+			class={['inline', 'transition-transform', 'duration-300', $$props.classIcon].join(' ')}
+			{icon}
 		></Icon>
 	</a>
 </div>

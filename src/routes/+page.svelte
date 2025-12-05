@@ -43,5 +43,7 @@
 		text={$t('about.invite')}
 		actionContent={$t('about.go_exp')}
 		href="/experiences"
+		icon="mingcute:arrow-right-fill"
+		classIcon="text-base lg:text-lg xl:text-xl 2xl:text-2xl group-hover:translate-x-2 "
 	></Link>
 </div>

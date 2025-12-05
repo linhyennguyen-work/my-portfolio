@@ -19,9 +19,11 @@
 			{$t('contact.greeting')}
 		</p>
 		<Link
-			class="text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl"
+			class="text-lg  lg:text-2xl xl:text-3xl 2xl:text-4xl"
 			text={$t('contact.connect')}
 			actionContent={$t('contact.get_resum')}
+			icon="mingcute:arrow-right-up-fill"
+			classIcon="text-base lg:text-lg xl:text-xl 2xl:text-2xl group-hover:translate-x-1 group-hover:-translate-y-1"
 		></Link>
 	</div>
 	<div class="mt-2 flex flex-col gap-2 lg:gap-8 xl:gap-10">
