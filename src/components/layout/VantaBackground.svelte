@@ -28,22 +28,18 @@
 			lowlight: 0x182135,
 			base: 0x0b111f
 		},
-
-		// --- LIGHT BLUE (Sắc xanh nhạt và sắc nét) ---
 		'light-blue': {
 			highlight: 0xbde3ff,
 			midtone: 0xd1ebff,
 			lowlight: 0xe4f4ff,
 			base: 0xf8fcff
 		},
-
 		'dark-rose': {
 			highlight: 0xd4b8bc,
 			midtone: 0xa38c91,
 			lowlight: 0x332629,
 			base: 0x120c0d
 		},
-
 		'light-rose': {
 			highlight: 0xffe4e9,
 			midtone: 0xeab8c1,
@@ -57,7 +53,7 @@
 			vantaEffect.destroy();
 		}
 
-		const colors = themeColors[theme] || themeColors['dark-black'];
+		const colors = themeColors[theme] || themeColors['dark-blue'];
 
 		const el = document.getElementById('vanta-background');
 		if (el) {
@@ -86,12 +82,12 @@
 	}
 
 	onMount(() => {
-		themeName = document.documentElement.dataset.theme || 'dark-black';
+		themeName = document.documentElement.dataset.theme || 'dark-blue';
 
 		observer = new MutationObserver((mutationsList) => {
 			for (const mutation of mutationsList) {
 				if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-					const newTheme = document.documentElement.dataset.theme || 'dark-black';
+					const newTheme = document.documentElement.dataset.theme || 'dark-blue';
 					if (newTheme !== themeName) {
 						themeName = newTheme; //
 					}
