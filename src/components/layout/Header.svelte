@@ -27,7 +27,6 @@
 	let mode: TMode = 'light';
 	let color: TColor = 'black';
 
-	// Helper: validate màu hợp lệ
 	function isColor(v: string): v is TColor {
 		return v === 'black' || v === 'blue' || v === 'rose';
 	}
@@ -73,12 +72,8 @@
 		applyTheme();
 	}
 
-	// hàm toggle ngôn ngữ
 	function toggleLanguage() {
-		locale.update((currentLocale) => {
-			const lang = currentLocale ?? 'en';
-			return lang === 'vi' ? 'en' : 'vi';
-		});
+		locale.set($locale === 'vi' ? 'en' : 'vi');
 	}
 </script>
 
