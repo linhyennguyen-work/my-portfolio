@@ -92,33 +92,35 @@
 </script>
 
 <Heading text={$t('exp.heading')}></Heading>
-<div class="mt-8 lg:mx-5 lg:mt-15 xl:mt-20 2xl:mt-25">
-	{#each timeline as item, i}
-		<div class={i > 0 ? 'mt-6 xl:mt-8 2xl:mt-10 ' : ''}>
-			<p class="text-lg font-medium text-primary lg:text-xl xl:text-2xl 2xl:text-3xl">
-				{item.company} — {item.role}
-			</p>
-			<p class="mt-1 font-medium text-secondary italic md:mt-3 2xl:text-xl">{item.time}</p>
-			<ul class="list-disc pl-10 text-primary md:mt-3 2xl:text-xl">
-				{#each item.responsibilities as task}
-					<li class="mt-2">{task}</li>
-				{/each}
-			</ul>
-		</div>
-	{/each}
-</div>
-<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
-	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">
-		[ {$t('exp.title_skills')} ]
-	</h3>
-	<SkillsItems {skills} />
-</div>
-<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
-	<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">
-		[ {$t('exp.title_prj')} ]
-	</h3>
-	{#each projects as item}
-		<ProjectCard {item}></ProjectCard>
-	{/each}
-	<SpecialButton></SpecialButton>
+<div>
+	<div class="mt-8 lg:mx-5 lg:mt-15 xl:mt-20 2xl:mt-25">
+		{#each timeline as item, i}
+			<div class={i > 0 ? 'mt-6 xl:mt-8 2xl:mt-10 ' : ''}>
+				<p class="text-lg font-medium text-primary lg:text-xl xl:text-2xl 2xl:text-3xl">
+					{item.company} — {item.role}
+				</p>
+				<p class="mt-1 font-medium text-secondary italic md:mt-3 2xl:text-xl">{item.time}</p>
+				<ul class="list-disc pl-10 text-primary md:mt-3 2xl:text-xl">
+					{#each item.responsibilities as task}
+						<li class="mt-2">{task}</li>
+					{/each}
+				</ul>
+			</div>
+		{/each}
+	</div>
+	<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
+		<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">
+			[ {$t('exp.title_skills')} ]
+		</h3>
+		<SkillsItems {skills} />
+	</div>
+	<div class="mt-10 lg:mx-5 lg:mt-10 xl:mt-15 2xl:mt-20">
+		<h3 class="mb-5 flex text-4xl font-bold text-primary lg:mb-10 2xl:text-5xl">
+			[ {$t('exp.title_prj')} ]
+		</h3>
+		{#each projects as item}
+			<ProjectCard {item}></ProjectCard>
+		{/each}
+		<SpecialButton></SpecialButton>
+	</div>
 </div>

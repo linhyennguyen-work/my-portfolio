@@ -21,13 +21,14 @@
 		class="xl mt-5 text-2xl font-bold
 					text-primary md:mt-10
 					md:text-3xl lg:mx-0.5
-					lg:mt-5 lg:text-4xl xl:mx-0.5 xl:mt-8 xl:text-5xl
-					2xl:mx-1 2xl:mt-15 2xl:text-6xl"
+					lg:mt-5 lg:text-4xl
+					xl:mx-0.5 xl:mt-8 xl:text-5xl
+					2xl:mx-1 2xl:mt-10 2xl:text-6xl"
 	>
 		{$t('about.role')}
 	</p>
 	<div
-		class="items mt-4 flex flex-col gap-6 md:mt-10 md:gap-8 lg:mx-0.5 lg:mt-4 lg:flex-row lg:gap-20 xl:mx-0.5 xl:mt-6 2xl:mx-1 2xl:mt-15"
+		class="items mt-4 flex flex-col gap-6 md:mt-10 md:gap-8 lg:mx-0.5 lg:mt-4 lg:flex-row lg:gap-20 xl:mx-0.5 xl:mt-6 2xl:mx-1 2xl:mt-8"
 	>
 		<InfoItem title="2" content={$t('about.skill_prj')}></InfoItem>
 		<InfoItem title="1+" content={$t('about.skill_exp')}></InfoItem>
@@ -39,7 +40,7 @@
 	/>
 
 	<Link
-		class="text-lg text-secondary md:text-2xl lg:mx-0.5 lg:inline  lg:text-lg xl:mx-0.5 xl:text-lg 2xl:mx-1 2xl:text-xl "
+		class="text-lg text-secondary md:text-2xl lg:mx-0.5 lg:inline lg:text-lg xl:mx-0.5 xl:text-lg 2xl:mx-1 2xl:text-xl "
 		text={$t('about.invite')}
 		actionContent={$t('about.go_exp')}
 		href="/experiences"
