@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/lyn-favicon.png';
 	import Header from '../components/layout/Header.svelte';
 	import '$lib/i18n';
 	import { setupI18n } from '$lib/i18n';
