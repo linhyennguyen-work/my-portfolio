@@ -16,7 +16,14 @@
 	>
 		{actionContent}
 		<Icon
-			class={['inline', 'transition-transform', 'duration-300', $$props.classIcon].join(' ')}
+			class={[
+				'inline',
+				'transition-transform',
+				'duration-300',
+				'lg:mb-1',
+				'2xl:mb-0',
+				$$props.classIcon
+			].join(' ')}
 			{icon}
 		></Icon>
 	</a>
