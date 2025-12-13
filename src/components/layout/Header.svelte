@@ -133,7 +133,11 @@
 				<IconButton onClick={toggleMode} icon="mingcute:sun-line" classIcon="text-2xl"></IconButton>
 				<IconButton onClick={toggleColor} icon="mingcute:palette-line" classIcon="text-2xl"
 				></IconButton>
-				<IconButton icon="circle-flags:lang-vi" classIcon="text-2xl"></IconButton>
+				<IconButton
+					onClick={toggleLanguage}
+					icon={$locale === 'vi' ? 'circle-flags:lang-vi' : 'circle-flags:lang-en'}
+					classIcon="text-2xl"
+				></IconButton>
 
 				<Button
 					class="mt-6"
