@@ -52,7 +52,6 @@
 
 	function applyTheme() {
 		const theme = `${mode}-${color}`;
-		console.log('theme:', theme);
 		document.documentElement.dataset.theme = theme;
 		localStorage.setItem('theme', theme);
 	}

@@ -53,7 +53,7 @@
 			vantaEffect.destroy();
 		}
 
-		const colors = themeColors[theme] || themeColors['dark-blue'];
+		const colors = themeColors[theme] || themeColors['dark-black'];
 
 		const el = document.getElementById('vanta-background');
 		if (el) {
@@ -82,12 +82,12 @@
 	}
 
 	onMount(() => {
-		themeName = document.documentElement.dataset.theme || 'dark-blue';
+		themeName = document.documentElement.dataset.theme || 'dark-black';
 
 		observer = new MutationObserver((mutationsList) => {
 			for (const mutation of mutationsList) {
 				if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-					const newTheme = document.documentElement.dataset.theme || 'dark-blue';
+					const newTheme = document.documentElement.dataset.theme || 'dark-black';
 					if (newTheme !== themeName) {
 						themeName = newTheme; //
 					}
