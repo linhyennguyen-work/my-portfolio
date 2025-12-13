@@ -24,6 +24,8 @@
 			actionContent={$t('contact.get_resum')}
 			icon="mingcute:arrow-right-up-fill"
 			classIcon="text-base lg:text-lg xl:text-xl 2xl:text-2xl group-hover:translate-x-1 group-hover:-translate-y-1"
+			href="/linhyennguyen-cv.pdf"
+			target="_blank"
 		></Link>
 	</div>
 	<div class="mt-2 flex flex-col gap-2 lg:gap-8 xl:gap-10">
